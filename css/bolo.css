@@ -1,0 +1,59 @@
+body{
+    font-family:Ariel, sans-serif;
+    margin:0;
+    padding:0;
+    box-sizing: border-box;
+}
+
+header{
+    background-color: #625368;
+    color:#aff;
+    padding: 15px 0;
+    text-align: center;
+}
+
+nav ul {
+    list-style: none;
+    padding:0;
+}
+
+nav ul li {
+    color: #aff;
+    text-decoration: none;
+}
+
+.carousel{
+    position: relative;
+    max-width: 400px;
+    margin: 20px auto;
+    overflow: hidden;
+    border: 1px solid #dddddd;
+}
+
+.carousel-container{
+    display: flex;
+    transition: transform 0.5s ease-in-out;
+}
+
+.carousel-button {
+    position: absolute;
+    top: 50%;
+    transform: translatey(-50%);
+    background-color: rgba(0,0,0,0.5);
+    border:none;
+    color:#fff;
+    padding: 10px;
+    z-index:10;
+}
+
+.carousel-button.prevg{
+    left: 10px;
+}
+.carousel-button.next{
+    right:10px
+}
+.carousel-slide h2, .carousel-slide p {
+
+    text-align: center;
+    margin: 10px 0;
+}
